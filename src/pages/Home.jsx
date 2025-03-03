@@ -53,12 +53,22 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="md:w-1/2 flex justify-center"
             >
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-secondary">
-                <img 
-                  src="assest\avatar.jpg" 
-                  alt="Your Name" 
-                  className="w-full h-full object-cover"
-                />
+              <div className="flex flex-col items-center">
+                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-secondary">
+                  <img 
+                    src="assest\avatar.jpg" 
+                    alt="Your Name" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="mt-8 w-full max-w-md"></div>
+                  <iframe
+                    width="100%" 
+                    height="352"
+                    src="https://open.spotify.com/embed/playlist/722xZgivcewD5geLr7nYpa?autoplay=1"                
+                    allow="autoplay; encrypted-media"               
+                    className="rounded-lg shadow-lg"
+                ></iframe>
               </div>
             </motion.div>
           </div>
@@ -106,9 +116,9 @@ const Home = () => {
               </div>
               <div className="mt-8">
                 <h4 className="font-medium text-secondary mb-2">Education</h4>
-                <p className="font-semibold">University Name</p>
-                <p>Degree in Field of Study</p>
-                <p className="text-tertiary">Graduation Year</p>
+                <p className="font-semibold">Sai Gon University</p>
+                <p>Information Technology</p>
+                <p className="text-tertiary">2021 - 2025</p>
               </div>
             </div>
           </div>
@@ -127,14 +137,14 @@ const Home = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <FaEnvelope className="text-secondary mr-4" size={24} />
-                  <a href="mailto:your.email@example.com" className="hover:text-secondary transition-colors duration-300">
-                    your.email@example.com
+                  <a href="mailto:thuando.contact@gmail.com" className="hover:text-secondary transition-colors duration-300">
+                  thuando.contact@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center">
                   <FaPhone className="text-secondary mr-4" size={24} />
-                  <a href="tel:+1234567890" className="hover:text-secondary transition-colors duration-300">
-                    +1 (234) 567-890
+                  <a href="tel:+84918839178" className="hover:text-secondary transition-colors duration-300">
+                    +84 (918) 839-178
                   </a>
                 </div>
                 <div className="flex items-center">
@@ -145,8 +155,8 @@ const Home = () => {
                 </div>
                 <div className="flex items-center">
                   <FaGithub className="text-secondary mr-4" size={24} />
-                  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors duration-300">
-                    github.com/yourusername
+                  <a href="https://github.com/justnas03" target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition-colors duration-300">
+                    github.com/justnas03
                   </a>
                 </div>
               </div>

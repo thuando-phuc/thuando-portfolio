@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Experience from './pages/Experience';
 import Awards from './pages/Awards';
 import Projects from './pages/Projects';
+import Gallery from './pages/Gallery';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,6 +52,7 @@ const App = () => {
               <NavLink to="/experience" className="nav-link">Experience</NavLink>
               <NavLink to="/awards" className="nav-link">Awards & Activities</NavLink>
               <NavLink to="/projects" className="nav-link">Projects</NavLink>
+              <NavLink to="/gallery" className="nav-link">Gallery</NavLink>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -71,15 +73,16 @@ const App = () => {
             <NavLink to="/experience" className="nav-link" onClick={closeMenu}>Experience</NavLink>
             <NavLink to="/awards" className="nav-link" onClick={closeMenu}>Awards & Activities</NavLink>
             <NavLink to="/projects" className="nav-link" onClick={closeMenu}>Projects</NavLink>
+            <NavLink to="/gallery" className="nav-link">Gallery</NavLink>
           </div>
           <div className="mt-12 flex space-x-6">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://github.com/justnas03" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://linkedin.com/in/thuandodev" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaLinkedin size={24} />
             </a>
-            <a href="mailto:your.email@example.com" className="social-icon">
+            <a href="mailto:thuando.contact@gmail.com" className="social-icon">
               <FaEnvelope size={24} />
             </a>
           </div>
@@ -92,6 +95,7 @@ const App = () => {
             <Route path="/experience" element={<Experience />} />
             <Route path="/awards" element={<Awards />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
         </main>
 
@@ -103,13 +107,13 @@ const App = () => {
                 <p className="text-tertiary">&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
               </div>
               <div className="flex space-x-6">
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://github.com/justnas03" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <FaGithub size={20} />
                 </a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://linkedin.com/in/thuandodev" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <FaLinkedin size={20} />
                 </a>
-                <a href="mailto:your.email@example.com" className="social-icon">
+                <a href="mailto:thuando.contact@gmail.com" className="social-icon">
                   <FaEnvelope size={20} />
                 </a>
               </div>
