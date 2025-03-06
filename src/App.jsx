@@ -48,7 +48,7 @@ const App = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6">
-              <NavLink to="/" className="nav-link">Home</NavLink>
+              <NavLink to="./thuando-portfolio/" className="nav-link">Home</NavLink>
               <NavLink to="/experience" className="nav-link">Experience</NavLink>
               <NavLink to="/awards" className="nav-link">Awards & Activities</NavLink>
               <NavLink to="/projects" className="nav-link">Projects</NavLink>
@@ -69,7 +69,7 @@ const App = () => {
         {/* Mobile Menu */}
         <div className={`mobile-menu ${isMenuOpen ? 'visible' : 'hidden'} md:hidden`}>
           <div className="flex flex-col space-y-6 text-xl">
-            <NavLink to="/" className="nav-link" onClick={closeMenu}>Home</NavLink>
+            <NavLink to="./thuando-portfolio/" className="nav-link" onClick={closeMenu}>Home</NavLink>
             <NavLink to="/experience" className="nav-link" onClick={closeMenu}>Experience</NavLink>
             <NavLink to="/awards" className="nav-link" onClick={closeMenu}>Awards & Activities</NavLink>
             <NavLink to="/projects" className="nav-link" onClick={closeMenu}>Projects</NavLink>
