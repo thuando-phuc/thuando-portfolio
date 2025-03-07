@@ -48,11 +48,11 @@ const App = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6">
-              <NavLink to="/" className="nav-link">Home</NavLink>
-              <NavLink to="/experience" className="nav-link">Experience</NavLink>
-              <NavLink to="/awards" className="nav-link">Awards & Activities</NavLink>
-              <NavLink to="/projects" className="nav-link">Projects</NavLink>
-              <NavLink to="/gallery" className="nav-link">Gallery</NavLink>
+              <NavLink to="./thuando-porfolio/" className="nav-link">Home</NavLink>
+              <NavLink to="./thuando-porfolio/experience" className="nav-link">Experience</NavLink>
+              <NavLink to="./thuando-porfolio/awards" className="nav-link">Awards & Activities</NavLink>
+              <NavLink to="./thuando-porfolio/projects" className="nav-link">Projects</NavLink>
+              <NavLink to="./thuando-porfolio/gallery" className="nav-link">Gallery</NavLink>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -69,14 +69,14 @@ const App = () => {
         {/* Mobile Menu */}
         <div className={`mobile-menu ${isMenuOpen ? 'visible' : 'hidden'} md:hidden`}>
           <div className="flex flex-col space-y-6 text-xl">
-            <NavLink to="/" className="nav-link" onClick={closeMenu}>Home</NavLink>
-            <NavLink to="/experience" className="nav-link" onClick={closeMenu}>Experience</NavLink>
-            <NavLink to="/awards" className="nav-link" onClick={closeMenu}>Awards & Activities</NavLink>
-            <NavLink to="/projects" className="nav-link" onClick={closeMenu}>Projects</NavLink>
-            <NavLink to="/gallery" className="nav-link">Gallery</NavLink>
+            <NavLink to="./thuando-porfolio/" className="nav-link" onClick={closeMenu}>Home</NavLink>
+            <NavLink to="./thuando-porfolio/experience" className="nav-link" onClick={closeMenu}>Experience</NavLink>
+            <NavLink to="./thuando-porfolio/awards" className="nav-link" onClick={closeMenu}>Awards & Activities</NavLink>
+            <NavLink to="./thuando-porfolio/projects" className="nav-link" onClick={closeMenu}>Projects</NavLink>
+            <NavLink to="./thuando-porfolio/gallery" className="nav-link">Gallery</NavLink>
           </div>
           <div className="mt-12 flex space-x-6">
-            <a href="https://github.com/thuando-phuc" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <a href="https://github.com/justnas03" target="_blank" rel="noopener noreferrer" className="social-icon">
               <FaGithub size={24} />
             </a>
             <a href="https://linkedin.com/in/thuandodev" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -91,11 +91,11 @@ const App = () => {
         {/* Main Content */}
         <main className="pt-20">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/awards" element={<Awards />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/thuando-porfolio/" element={<Home />} />
+            <Route path="/thuando-porfolio/experience" element={<Experience />} />
+            <Route path="/thuando-porfolio/awards" element={<Awards />} />
+            <Route path="/thuando-porfolio/projects" element={<Projects />} />
+            <Route path="/thuando-porfolio/gallery" element={<Gallery />} />
           </Routes>
         </main>
 
@@ -104,10 +104,10 @@ const App = () => {
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="mb-4 md:mb-0">
-                <p className="text-tertiary">&copy; {new Date().getFullYear()} Thuan Do. All rights reserved.</p>
+                <p className="text-tertiary">&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
               </div>
               <div className="flex space-x-6">
-                <a href="https://github.com/thuando-phuc" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://github.com/justnas03" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <FaGithub size={20} />
                 </a>
                 <a href="https://linkedin.com/in/thuandodev" target="_blank" rel="noopener noreferrer" className="social-icon">
