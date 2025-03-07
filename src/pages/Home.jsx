@@ -63,7 +63,7 @@ const Home = () => {
                 </div>
                 <div className="mt-8 w-full max-w-md"></div>
                   <iframe
-                    width="100%" 
+                    width="500px" 
                     height="352"
                     src="https://open.spotify.com/embed/playlist/722xZgivcewD5geLr7nYpa?autoplay=1"                
                     allow="autoplay; encrypted-media"               
