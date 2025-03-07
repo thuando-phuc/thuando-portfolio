@@ -56,7 +56,7 @@ const Home = () => {
               <div className="flex flex-col items-center">
                 <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-secondary">
                   <img 
-                    src="assest\avatar.jpg" 
+                    src="public\images\project1\avatar.jpg" 
                     alt="Your Name" 
                     className="w-full h-full object-cover"
                   />
